@@ -21,4 +21,22 @@
  */
 - (void)registerNibWithClass:(Class)nibClass forCellWithReuseIdentifier:(NSString *)identifier inBundle:(NSBundle*)bundle;
 
+// 注册Cell
+- (void)registerNibWithName:(NSString *)strNib;
+
+// 注册Cell
+- (void)registerNibWithName:(NSString *)strNib bundle:(NSString*)strBundleName;
+
+// 注册头部View
+- (void)registerNibWithHeaderSupplementaryViewName:(NSString *)strNib;
+
+// 注册头部View
+- (void)registerNibWithHeaderSupplementaryViewName:(NSString *)strNib bundle:(NSString*)strBundleName;
+
+// 注册尾部View
+- (void)registerNibWithFooterSupplementaryViewName:(NSString *)strNib;
+
+// 注册尾部View
+- (void)registerNibWithFooterSupplementaryViewName:(NSString *)strNib bundle:(NSString*)strBundleName;
+
 @end
